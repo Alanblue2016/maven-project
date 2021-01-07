@@ -1,4 +1,8 @@
-public class FromBean {
+import lombok.Data;
+
+import java.math.BigDecimal;
+
+
 
     @Data
     public class FromBean {
@@ -10,8 +14,5 @@ public class FromBean {
         private BigDecimal money;
     }
 
-    @Data
-    public class ToBean extends FromBean {
 
-    }
-}
+
