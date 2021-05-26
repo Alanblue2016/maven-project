@@ -1,15 +1,9 @@
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import sun.rmi.runtime.Log;
-
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 public class ListTool {
-
-
 
 
     /**
@@ -39,6 +33,12 @@ public class ListTool {
             listArray.add(subList);
         }
         return listArray;
+    }
+
+
+    public static void add(int i, Boolean b) {
+        i = i + 100;
+        b = false;
     }
 
 }

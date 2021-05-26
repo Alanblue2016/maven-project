@@ -72,4 +72,19 @@ public class TimeTool {
         LocalDateTime localDateTime = LocalDateTime.ofInstant(instant, ZoneId.systemDefault());
         return formatter.format(localDateTime);
     }
+
+
+    /**
+     *  获取毫秒时间戳
+     * @param date
+     * @return
+     * @throws ParseException
+     */
+    public static Long getMillisecond(String date) throws ParseException {
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+        long millisecond = format.parse(date).getTime();
+
+        return millisecond;
+    }
 }

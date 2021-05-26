@@ -1,3 +1,6 @@
+package bean;
+
+import bean.FromBean;
 import lombok.Data;
 
 @Data
